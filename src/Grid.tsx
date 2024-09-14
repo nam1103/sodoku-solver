@@ -4,7 +4,7 @@ type Props = {
 	handleChange: (row: number, col: number) => void;
 };
 
-export const Grid = ({ grid, selectedNumber, handleChange }: Props) => {
+export const Grid = ({ grid, handleChange }: Props) => {
 	const getCellClasses = (rowIndex: number, colIndex: number) => {
 		let classes = `w-12 h-12 text-center border flex justify-center items-center text-xl font-bold cursor-pointer hover:bg-blue-200 transition-colors duration-75 select-none`;
 
